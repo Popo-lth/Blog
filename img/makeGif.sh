@@ -2,6 +2,8 @@
 # FileName:makeGif.sh
 # Author:liutianhao.pro@gmail.com
 
+# sudo apt-get install imagemagick mplayer gtk-recordmydesktop
+
 #工作目录
 localpath="/home/popo/picture/recordMyDesktop"
 #把录像文件拿到工作目录下
