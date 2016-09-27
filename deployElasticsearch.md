@@ -1,8 +1,5 @@
 #Elasticsearch 部署方式简介
 
-@(工作笔记)
-
-[TOC]
 
 ##1. simple
 
