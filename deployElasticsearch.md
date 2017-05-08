@@ -1,9 +1,9 @@
-#Elasticsearch 部署方式简介
+# Elasticsearch 部署方式简介
 
 
-##1. simple
+## 1. simple
 
-###1.1 simple
+### 1.1 simple
 简单部署方式有以下几个特点:
 
 1. 每个节点都是 [master 候选节点](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html#master-node)
@@ -26,7 +26,7 @@
 
 + 数据量很小, 写入读取的压力都不大的情况下, 采用这种方式部署十分便捷.
 
-###1.2 simple + client
+### 1.2 simple + client
 
 在简单部署方式的基础上增加 [Client 节点](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html#client-node)
 
@@ -44,7 +44,7 @@
 
 + 需要资源多
 
-##2. standalone master-eligible node
+## 2. standalone master-eligible node
 
 集群规模较大, 或者对集群稳定性要求较高的情况下, 我们需要使用专职 master 节点, 尽量让 master 节点承担较少的工作量.
 
@@ -60,7 +60,7 @@
     node.data: false 
 ```
 
-###2.1 core cluster
+### 2.1 core cluster
 
 部署结构如图:
 
@@ -80,7 +80,7 @@ core 节点中包含若干数据节点, 可以用来存储一些特殊索引, �
 + 搭建较为复杂
 
 
-###2.2 multi-node on a single machine
+### 2.2 multi-node on a single machine
 
 由于 [32G Heap](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/heap-sizing.html#compressed_oops) 的问题导致我们在采用大内存物理机时可能会面临一台机器上搭建多个节点的情况.
 

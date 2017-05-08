@@ -1,8 +1,8 @@
-#Elasticsearch Overview
+# Elasticsearch Overview
 
 [TOC]
 
-##Getting Started
+## Getting Started
 
 Elasticsearch 是一个开源的搜索引擎, 建立在一个全文搜索引擎库 Apache Lucene 基础之上. Elasticsearch 的目的是使全文检索变得简单, 通过隐藏 Lucene 的复杂性, 取而代之的提供一套简单一致的 RESTful API. 它可以被下面这样准确的形容:
 
@@ -12,7 +12,7 @@ Elasticsearch 是一个开源的搜索引擎, 建立在一个全文搜索引擎�
 
 就 Elasticsearch 而言, 起步很简单. 对于初学者来说, 它预设了一些适当的默认值, 并隐藏了复杂的搜索理论知识. 开箱即用. 只需最少的理解, 你很快就能具有生产力.
 
-##Glossary
+## Glossary
 
 + 节点(Node) 一个运行中的 Elasticsearch 实例称为一个节点
 + 集群(Cluster) 集群是由一个或者多个拥有相同 cluster.name 配置的节点组成, 它们共同承担数据和负载的压力
