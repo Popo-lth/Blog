@@ -4,13 +4,12 @@ Table of Contents
 =================
 
    * [HashMap源码分析](#hashmap源码分析)
-   * [Table of Contents](#table-of-contents)
-         * [1. HashMap的数据结构：](#1-hashmap的数据结构)
-         * [2.构造函数](#2构造函数)
-         * [3.put操作](#3put操作)
-         * [4.get操作](#4get操作)
-         * [5. Fail-Fast机制](#5-fail-fast机制)
-         * [参考](#参考)
+      * [1. HashMap的数据结构：](#1-hashmap的数据结构)
+      * [2.构造函数](#2构造函数)
+      * [3.put操作](#3put操作)
+      * [4.get操作](#4get操作)
+      * [5. Fail-Fast机制](#5-fail-fast机制)
+      * [参考](#参考)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
@@ -18,7 +17,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非同步和允许使用 null 之外，HashMap 类与 Hashtable 大致相同。）此类不保证映射的顺序，特别是它不保证该顺序恒久不变。
 
-### 1. HashMap的数据结构：
+## 1. HashMap的数据结构：
 
 HashMap使用数组和链表来共同组成的。可以看出底层是一个数组，而数组的每个元素都是一个链表头。
 
@@ -36,7 +35,7 @@ static class Entry<K,V> implements Map.Entry<K,V> {
 
 Entry是HashMap中的一个内部静态类，包级私有，实现了Map中的接口Entey<K,V>。可以看出来它内部含有一个指向下一个元素的指针。
 
-### 2.构造函数
+## 2.构造函数
 
 HashMap的构造函数有四个：
 
@@ -85,7 +84,7 @@ HashMap的构造函数有四个：
 
 当输入的加载因子小于零或者不是浮点数时会抛出异常（IllegalArgumentException）。
 
-### 3.put操作
+## 3.put操作
 
 ```java
 	/**
@@ -282,7 +281,7 @@ resize操作先要判断当前table的长度是不是已经等于最大容量（
 
 到这里整个put函数算是结束了。如果新插入的K，V则会返回null。
 
-### 4.get操作
+## 4.get操作
 
 ```java
     /**
@@ -354,7 +353,7 @@ key不是null则会调用getEntry函数，并返回一个Entry对象，如果不
 
 直接求key值hash值，然后求table中的位置，遍历链表。有返回entry对象，没有返回null。
 
-### 5. Fail-Fast机制
+## 5. Fail-Fast机制
 
 ```java
     /**
@@ -373,7 +372,7 @@ key不是null则会调用getEntry函数，并返回一个Entry对象，如果不
 
 **注意**，迭代器的快速失败行为不能得到保证，一般来说，存在非同步的并发修改时，不可能作出任何坚决的保证。快速失败迭代器尽最大努力抛出 ConcurrentModificationException。因此，编写依赖于此异常的程序的做法是错误的，正确做法是：迭代器的快速失败行为应该仅用于检测程序错误。
 
-### 参考
+## 参考
 
 + 《Core JAVA》
 + 《JAVA API》
