@@ -11,7 +11,7 @@
 
 部署结构如图:
 
-![Alt text](https://github.com/Popo-lth/Blog/blob/master/img/deployElasticsearch/simple.jpg?raw=true)
+![Alt text](img/deployElasticsearch/simple.jpg)
 
 
 优点:
@@ -32,7 +32,7 @@
 
 部署结构如图:
 
-![Alt text](https://github.com/Popo-lth/Blog/blob/master/img/deployElasticsearch/simple+client.jpg?raw=true)
+![Alt text](img/deployElasticsearch/simple+client.jpg)
 
 
 优点:
@@ -64,7 +64,7 @@
 
 部署结构如图:
 
-![Alt text](https://github.com/Popo-lth/Blog/blob/master/img/deployElasticsearch/core.jpg?raw=true)
+![Alt text](img/deployElasticsearch/core.jpg)
 
 
 core 节点中包含若干数据节点, 可以用来存储一些特殊索引, 比如 kibana 索引或者 marvel 索引等.

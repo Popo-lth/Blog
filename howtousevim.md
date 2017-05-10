@@ -14,7 +14,7 @@
 
 不过基本的还是要稍微介绍一下的。比如vim的模式。一打开vim什么都不动就是普通（Normal）模式，这个时候是不能输入的，刚开始用你会觉得妈的打开个编辑器还不让我写。不要着急~按一下i就可以插入了，这时候就进入了编辑（Insert ）模式。退出编辑模式可以使用[ESC]，按下[ESC]后回到Normal模式，这时候输“：”就会进入命令模式了，比如：q是退出。现在使用这个命令应该是退不出来了，因为已经编辑了，所以可以使用：q！，加上感叹号之后可以强制命令执行，当然你要是想保存的可以使用：wq，w是写入，q是退出，写入之后就可以退出了吧。执行以下卧槽还不行，木有文件名，vim也不知道写到哪里啊，跟上文件名，使用：wq filename，这个时候就能退出了，这时候当前目录下就会出现名字为filename的文件了，cat一下就是你刚才写的内容，当然你要是毛都没写那在：q的时候就退出了~
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.01.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.01.gif)
 
 小节：三种模式，普通模式，编辑模式，命令模式，普通模式可以使用一下快捷键，命令模式可以使用命令，比如刚才的w和q，编辑模式就不啰嗦了。
 
@@ -24,7 +24,7 @@
 
 h，j，k，l 这四个键就是移动光标用的快捷键，当然要记得快捷键是在普通模式下用的。用之前可以习惯性按一下[ESC]，h在最左边，所以h是左移，l在最右边，所以l是右移，j有个钩，看上去就是个下移的货，K就只能上移了，快来试一下吧。除了这几个快捷键还有很多
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.02.jpg?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.02.jpg)
 
 随便试几下，感受一下，刚开始肯定不习惯，但是一定要管住自己的手，不要去使用方向键，慢慢去习惯。当然移动光标的方法有很多。
 
@@ -61,11 +61,11 @@ h，j，k，l 这四个键就是移动光标用的快捷键，当然要记得快
 
 **使用w（小写）**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.02.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.02.gif)
 
 **使用W（大写）**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.03.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.03.gif)
 
 常用命令：
 
@@ -95,11 +95,11 @@ h，j，k，l 这四个键就是移动光标用的快捷键，当然要记得快
 
 **使用r（小写）**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.04.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.04.gif)
 
 **使用R（大写）**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.05.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.05.gif)
 
 这四个字母除了 r 和 R 都能使VIM进入编辑模式。编写代码或者文本还需要不断地修改或者删除文本，VIM有各种各样的删除快捷键和命令。
 
@@ -109,11 +109,11 @@ h，j，k，l 这四个键就是移动光标用的快捷键，当然要记得快
 
 **使用x（小写）**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.06.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.06.gif)
 
 **使用X（大写）**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.07.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.07.gif)
 
 可以看出来 x（小写）会删掉光标所在字符， X （大写）则不会。当然要是觉得连续按不方便可以直接在前面加重复因子，说得这么高大上，其实就是在前面加数字比如：6x 就是相当于按6次x，效果就是删掉6个字符了。前面的数字可以很大不局限于一位数，比如99x也可以的，不过我觉得十以上的你也不会一个字符一个字符的数到你想删除的地方吧。小心眼花~
 
@@ -149,11 +149,11 @@ cc / dd 也是可以使用重复因子的，比如：5cc / 5dd
 
 **使用ct<**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.08.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.08.gif)
 
 **使用df<**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.09.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.09.gif)
 
 **注意字符“ < ”的删除情况和左下角显示的“插入”，这表示VIM进入了编辑模式。**
 
@@ -191,7 +191,7 @@ p / P       粘贴至光标后，若复制整行则粘贴在当前行的下面�
 
 **快捷键组合 dd + j + j + p**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.10.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.10.gif)
 
 ## 搜索与替换（命令）
 
@@ -217,12 +217,12 @@ p / P       粘贴至光标后，若复制整行则粘贴在当前行的下面�
 
 **比如使用   :%s/class/Class/gc**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.11.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.11.gif)
 
 **也可以用来做注释用。 :%s/^/#/g**
 
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.12.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.12.gif)
 
 ## 区块模式
 
@@ -232,7 +232,7 @@ p / P       粘贴至光标后，若复制整行则粘贴在当前行的下面�
 
 选择多行后按 I （大写），然后写注释符号，按下ESC，稍等一下注释就出来了。
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.13.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.13.gif)
 
 ## 其他快捷键和命令
 
@@ -250,11 +250,11 @@ VIM还有很多快捷键和命令，这里不可能说全，[如图](http://cool
 
 **使用快捷键组合 J + . (连续三次) + u(连续四次) + \[Ctrl + r\]\(连续四次\)**
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.14.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.14.gif)
 
 **使用Ctrl + P / Ctrl + n 和 使用Ctrl + xl **
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/howtousevim/vim.20140525.15.gif?raw=true)
+![enter image description here](img/howtousevim/vim.20140525.15.gif)
 
 命令
 

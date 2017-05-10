@@ -265,7 +265,7 @@ resize操作先要判断当前table的长度是不是已经等于最大容量（
 
 构造函数中传入一个Entry对象，并把它当做这个新生成的Entry的next。所以createEntry函数中的操作相当于把table[bucketIndex]上的链表拿下来，放在新的Entry后面，然后再把新的Entry放到table[bucketIndex]上。
 
-![enter image description here](https://github.com/Popo-lth/Blog/blob/master/img/hashMapSourceAnalysis/hs.20150729.02.jpg?raw=true)
+![enter image description here](img/hashMapSourceAnalysis/hs.20150729.02.jpg)
 
 到这里整个put函数算是结束了。如果新插入的K，V则会返回null。
 
