@@ -1,5 +1,16 @@
 # HashMap源码分析
 
+Table of Contents
+=================
+   * [HashMap源码分析](#hashmap源码分析)
+         * [1. HashMap的数据结构：](#1-hashmap的数据结构)
+         * [2.构造函数](#2构造函数)
+         * [3.put操作](#3put操作)
+         * [4.get操作](#4get操作)
+         * [5. Fail-Fast机制](#5-fail-fast机制)
+         * [参考](#参考)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）。
 
