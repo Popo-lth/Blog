@@ -1,5 +1,17 @@
 # Elasticsearch 部署方式简介
 
+Table of Contents
+=================
+
+   * [Elasticsearch 部署方式简介](#elasticsearch-部署方式简介)
+      * [1. simple](#1-simple)
+         * [1.1 simple](#11-simple)
+         * [1.2 simple   client](#12-simple--client)
+      * [2. standalone master-eligible node](#2-standalone-master-eligible-node)
+         * [2.1 core cluster](#21-core-cluster)
+         * [2.2 multi-node on a single machine](#22-multi-node-on-a-single-machine)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 ## 1. simple
 
